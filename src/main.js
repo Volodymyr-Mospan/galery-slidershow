@@ -3,7 +3,7 @@ import Masonry from "masonry-layout";
 import imagesLoaded from "imagesloaded";
 import galleryData from "./data.json";
 
-// console.log(galleryData);
+console.log(galleryData);
 const gallery = document.querySelector(".gallery");
 
 async function murkupGallery(galleryData) {
