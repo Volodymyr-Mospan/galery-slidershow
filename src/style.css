@@ -1,0 +1,122 @@
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.btn-start-slideshow {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2.57143px;
+  text-transform: uppercase;
+
+  color: #7d7d7d;
+
+  border: none;
+  background-color: inherit;
+
+  cursor: pointer;
+}
+
+/* Галерея */
+.gallery {
+  margin: 0 auto;
+}
+
+/* 4 колонки + 3 відступи по 40px = 4 * card + 3 * 40px = 100% */
+.grid-sizer,
+.card {
+  width: calc((100% - 3 * 40px) / 4); /* Рівно 4 колонки + 40px між ними */
+  float: left;
+  margin-bottom: 40px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Підпис */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+}
+
+.pic-name {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.pic-author {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
